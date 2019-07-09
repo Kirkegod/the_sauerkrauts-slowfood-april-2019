@@ -3,6 +3,8 @@ When("I visit the site") do
 end
 
 
-Given("I click {string}") do |link|
-  click_on link
+Given("the following products exist") do |table|
+  table.hashes.each do |product|
+    Product.create!(product)
+  end
 end

@@ -5,5 +5,5 @@ Feature: See menu on landing page
 
   Scenario: View list of dishes on the landing page
     When I visit the site
-    Then I should see "menu"
+    Then I should see "Menu"
    

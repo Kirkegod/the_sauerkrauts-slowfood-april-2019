@@ -3,10 +3,12 @@ Feature: Visitor can see a menu
     In order to get an overview of the restaurant products
     I would like to be able to see a menu
 
-    Scenario: View list of products on the landing page
-        Given the following products exist
-            | name   | description | price | category |
-            | nachos | mexican     | 160   | starter  |
+    Given the following products exist
+        | name      | description | price | category |
+        | nachos    | mexican     | 160   | starter  |
+        | hamburger | american    | 100   | main     |
+
+    Scenario: View list of products on the landing page        
         When I visit the site
         Then I should see "nachos"
         And I should see "mexican"

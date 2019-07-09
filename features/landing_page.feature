@@ -4,7 +4,7 @@ Feature: See menu on landing page
   I would like to see a list of all dishes on menu
 
   Scenario: View list of dishes on the landing page
-    When I visit the site
+    Given I visit the site
     Then I should see "Menu"
     And I should see "Login"
     And I should see "Cart"

@@ -1,6 +1,8 @@
 FactoryBot.define do
   factory :product do
-    title "MyString"
-    content "MyText"
+    name "nachos"
+    description "mexican"
+    price "160 SEK"
+    category "starter"
   end
 end

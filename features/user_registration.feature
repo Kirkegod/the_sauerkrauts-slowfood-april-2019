@@ -8,10 +8,10 @@ Feature: User registration
     And I click the "Login" button
 
   Scenario: Visitor can create an account to become a registered user
-    When I click the "Signup" button
-    And I fill the "Name" with "John"
+    And I click the "Sign up" button
+    # Then I fill the "Name" with "John"
     And I fill the "Email" with "john@doe.com"
     And I fill the "Password" with "password1"
     And I fill the "Password confirmation" with "password1"
     And I click the "Sign up" button
-    Then I should see "Please check your e-mail inbox and confirm your registration"
+    Then I should see "Hello, John"

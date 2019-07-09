@@ -1,3 +1,3 @@
 When("I visit the site") do
-    visit root_path
+  visit root_path
 end

@@ -7,7 +7,7 @@ Feature: User registration
     Given I visit the site
     And I click the "Login" button
 
-  Scenario: Visitor can create an account to become a registered user
+  Scenario: Visitor can create an account to become a registered user[Hapy path]
     And I click the "Sign up" button
     Then I fill the "Name" with "John"
     And I fill the "Email" with "john@doe.com"
@@ -15,3 +15,12 @@ Feature: User registration
     And I fill the "Password confirmation" with "password1"
     And I click the "Sign up" button
     Then I should see "Hello, John"
+
+  Scenario: Visitor can't create an account with invalid credentials[Sad path]
+    Given I click the "Sign up" button
+    And I fill the "Email" with ""
+    And I fill the "Password" with ""
+    And I fill the "Password confirmation" with ""
+    And I click the "Sign up" button
+    Then I should see "Email can't be blank"
+    Then I should see "Password can't be blank"

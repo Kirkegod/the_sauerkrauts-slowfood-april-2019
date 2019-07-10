@@ -1,5 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
-end
+  describe 'DB table' do
+    it { is_expected.to have_db_column :name }
+    it { is_expected.to have_db_column :email }
+    it { is_expected.to have_db_column :encrypted_password }
+  end
+ end

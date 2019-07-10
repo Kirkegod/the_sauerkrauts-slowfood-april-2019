@@ -15,13 +15,13 @@ ActiveRecord::Schema.define(version: 2019_07_09_183808) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "dishes", force: :cascade do |t|
+  create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "price"
+    t.text "category"
+    t.decimal "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  
   end
 
 end

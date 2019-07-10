@@ -8,7 +8,7 @@ Background:
         | name      | description | price | category |
         | nachos    | mexican     | 160   | starter  |
         | hamburger | american    | 100   | main     |
-        | helado    | chilean     | 45    | desert     |
+        | helado    | chilean     | 45    | desert   |
 
 Scenario: View list of products on the landing page        
     When I visit the site

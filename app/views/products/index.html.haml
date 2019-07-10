@@ -6,3 +6,9 @@
       %a{href: "#"} Login
 
 %h1 Menu
+- @products.each do |product|
+  = product.name 
+  = product.description 
+  = "#{product.price} SEK"
+  = product.category
+

@@ -9,7 +9,7 @@
   %body
   - if user_signed_in?
     %p
-      Hello, #{current_user} - #{link_to "Sign_out", destroy_user_session_path, method: 'delete'}
+      Hello, #{current_user.name} - #{link_to "Sign_out", destroy_user_session_path, method: 'delete'}
         
     %br/
 

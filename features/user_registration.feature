@@ -9,7 +9,7 @@ Feature: User registration
 
   Scenario: Visitor can create an account to become a registered user
     And I click the "Sign up" button
-    # Then I fill the "Name" with "John"
+    Then I fill the "Name" with "John"
     And I fill the "Email" with "john@doe.com"
     And I fill the "Password" with "password1"
     And I fill the "Password confirmation" with "password1"

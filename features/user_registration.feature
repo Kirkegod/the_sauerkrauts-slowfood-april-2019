@@ -5,11 +5,10 @@ Feature: User registration
 
   Background:
     Given I visit the site
-    And I click the "Login" button
+    And I click the "Sign Up" button
 
   Scenario: Visitor can create an account to become a registered user[Hapy path]
-    When I click the "Sign up" button
-    And I fill the "Name" with "John"
+    When I fill the "Name" with "John"
     And I fill the "Email" with "john@doe.com"
     And I fill the "Password" with "password1"
     And I fill the "Password confirmation" with "password1"
@@ -17,8 +16,7 @@ Feature: User registration
     Then I should see "Hello, John"
 
   Scenario: Visitor can't create an account with invalid credentials[Sad path]
-    When I click the "Sign up" button
-    And I fill the "Email" with ""
+    When I fill the "Email" with ""
     And I fill the "Password" with ""
     And I fill the "Password confirmation" with ""
     And I click the "Sign up" button

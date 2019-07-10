@@ -6,6 +6,6 @@ Feature: See menu on landing page
   Scenario: View list of products on the landing page
     Given I visit the site
     Then I should see "Menu"
-    And I should see "Login"
+    And I should see "Sign Up"
     And I should see "Cart"
    

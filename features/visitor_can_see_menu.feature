@@ -8,7 +8,7 @@ Feature: Visitor can see a menu
             | name      | description | price | category |
             | nachos    | mexican     | 160   | starter  |
             | hamburger | american    | 100   | main     |
-        When I visit the site
+        And I visit the site
     Scenario: View list of products on the landing page
         Then I should see "nachos"
         And I should see "mexican"

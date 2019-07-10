@@ -9,9 +9,9 @@ Background:
         | nachos    | mexican     | 160   | starter  |
         | hamburger | american    | 100   | main     |
         | helado    | chilean     | 45    | desert   |
-
+    And I visit the site
+    
 Scenario: View list of products on the landing page        
-    When I visit the site
     Then I should see "nachos"
     And I should see "mexican"
     And I should see "160"

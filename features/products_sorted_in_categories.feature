@@ -5,11 +5,10 @@ Feature: Visitor can see products sorted in categories
 
 Background:
     Given the following products exist
-        | name         | description | price | category |
-        | nachos       | mexican     | 160   | starter  |
-        | pizza        | italian     | 180   | main     |
-        | pasta        | italian     | 220   | main     |
-        | creme brulee | french      | 80    | dessert  |
+         | name      | description | price | category |
+        | nachos    | mexican     | 160   | starter  |
+        | hamburger | american    | 100   | main     |
+        | helado    | chilean     | 45    | desert   |
     And I visit the site
 
 Scenario: View the products sorted in categories

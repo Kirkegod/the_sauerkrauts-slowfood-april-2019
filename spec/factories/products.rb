@@ -4,6 +4,6 @@ FactoryBot.define do
     name {"MyString"}
     description {"MyText"}
     price {1}
-    category
+    category {"MyString"}
   end
 end

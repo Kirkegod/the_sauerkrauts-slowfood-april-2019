@@ -1,0 +1,19 @@
+Feature: Visitor can see products sorted in categories
+    As a visitor,
+    In order to navigate the products
+    I would like to see the products sorted in categories
+
+Background:
+    Given the following products exist
+        | name         | description | price | category |
+        | nachos       | mexican     | 160   | starter  |
+        | pizza        | italian     | 180   | main     |
+        | pasta        | italian     | 220   | main     |
+        | creme brulee | french      | 80    | dessert  |
+    And I visit the site
+
+Scenario: View the products sorted in categories
+    Then I should see "nachos" in the "starter" category
+    And I should see "pizza" in the "main" category
+    And I should see "pasta" in the "main" category
+    And I should see "creme brulee" in the "dessert" category

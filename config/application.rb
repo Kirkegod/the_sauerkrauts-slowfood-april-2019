@@ -25,15 +25,5 @@ module SlowFoodOnline
       generate.controller_specs false
       generate.system_tests = false
     end
-    ActionMailer::Base.smtp_settings = {
-      adress: "smtp.gmail.com",
-      domain: "mail.google.com",
-      port: 587,
-      user_name: "mymailerapp@gmail.com",
-      password: "weakpass",
-      authentication: "login",
-      enable_starttls_auto: true
-
-    }
   end
 end

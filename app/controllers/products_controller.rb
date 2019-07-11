@@ -1,7 +1,22 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.new
+    @categories = Category.new
   end
 
+  def new
+    @products = Product.new
+    @categories = Category.all
+  end
+
+  def create
+    @product = Product.new(product_params)
+    @product.update(category: find_category)
+    if @product.save
+      redirect_to products_path
+    else
+      @categories = Category.all
+      render 'new'
+    end
+  end
   
 end

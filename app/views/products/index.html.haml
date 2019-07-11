@@ -6,11 +6,16 @@
       %a{href: "users/sign_up"} Sign Up
     %li
       %a{href: "users/sign_in"} Log in
+    %li
+      = shop_icon_quantity
 
 %h1 Menu
-- @products.each do |product|
-  = product.name 
-  = product.description 
-  = "#{product.price} SEK"
-  = product.category
 
+- @products.each do |product|
+  .div{id: dom_id(product)}
+    %table
+      %td= product.name
+      %td= product.description
+      %td= product.price
+      %td= product.category
+      %td= add_to_cart(product, 1, 'Add to cart')

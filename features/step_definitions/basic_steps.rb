@@ -21,3 +21,10 @@ Given("the following user exists") do |table|
     FactoryBot.create(:user, user)
   end
 end
+
+When("I click on {string} on {string}") do |element, product_name|
+  product = Product.find_by_name(product_name)
+  within("#product_#{product.id}") do
+    click_on element
+  end
+end

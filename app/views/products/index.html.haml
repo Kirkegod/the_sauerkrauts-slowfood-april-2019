@@ -9,8 +9,8 @@
 
 %h1 Menu
 - @products.each do |product|
-  = product.name 
+  = product.name
   = product.description 
   = "#{product.price} SEK"
   = product.category
-
+  = add_to_cart(product, 1, 'Add to cart')

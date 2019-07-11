@@ -7,3 +7,4 @@ Given("the following products exist") do |table|
     FactoryBot.create(:product, product)
   end
 end
+

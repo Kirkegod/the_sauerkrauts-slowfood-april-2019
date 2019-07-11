@@ -4,8 +4,8 @@
     I would like to be able to log in
 
   Background:
-    Given the following user exist
-      |  Email          | Password  | Name  |
+    Given the following user exists
+      |  email          | password  | name  |
       |  john@doe.com   | password1 | John  |
     And I visit the site
     And I click the "Log in" button

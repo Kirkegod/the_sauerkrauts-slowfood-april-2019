@@ -15,3 +15,9 @@ Given("the following products exist") do |table|
     FactoryBot.create(:product, product)
   end
 end
+
+Given("the following user exists") do |table|
+  table.hashes.each do |user|
+    FactoryBot.create(:user, user)
+  end
+end

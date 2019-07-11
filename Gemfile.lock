@@ -78,7 +78,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     backports (3.15.0)
     bcrypt (3.1.13)
-    bindex (0.7.0)
+    bindex (0.8.1)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
     bootstrap (4.3.1)
@@ -408,4 +408,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   2.0.2
+   1.17.1

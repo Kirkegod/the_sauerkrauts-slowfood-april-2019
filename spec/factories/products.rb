@@ -7,3 +7,4 @@ FactoryBot.define do
     category {"MyString"}
   end
 end
+

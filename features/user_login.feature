@@ -17,7 +17,7 @@
     Then I should see "Signed in successfully"
     And I should see "Hello, John"
     
-  Scenario: Visitor can't log in whit invalid credentials[Sad path]
+  Scenario: Visitor can't log in with invalid credentials[Sad path]
     When I fill the "Email" with ""
     And I fill the "Password" with ""
     And I click the "Log in" button

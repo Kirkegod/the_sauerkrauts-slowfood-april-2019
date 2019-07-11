@@ -7,4 +7,16 @@
     = stylesheet_link_tag    'application', media: 'all', data: {'turbolinks-track' => 'reload'}
     = javascript_include_tag 'application', data: {'turbolinks-track' => 'reload'}
   %body
-    = yield
+
+  - if notice || alert
+    = notice
+    = alert
+
+  - if user_signed_in?
+    %p
+      Hello, #{current_user.name} - #{link_to "Sign_out", destroy_user_session_path, method: 'delete'}
+        
+    %br/
+
+  = yield
+    

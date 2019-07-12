@@ -1,7 +1,11 @@
 %nav.navbar.navbar-default{role: "navigation"}
   %ul.nav.navbar-nav
     %li
-      %a{href: "#"} Cart
+      - if user_signed_in?
+        %p
+          Hello, #{current_user.name} - #{link_to "Sign_out", destroy_user_session_path, method: 'delete'}
+    %li
+      = checkout_link
     %li
       %a{href: "users/sign_up"} Sign Up
     %li

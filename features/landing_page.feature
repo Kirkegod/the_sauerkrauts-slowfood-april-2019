@@ -7,5 +7,5 @@ Feature: See menu on landing page
     Given I visit the site
     Then I should see "Menu"
     And I should see "Sign Up"
-    And I should see "Cart"
+    And I should see "Log in"
    

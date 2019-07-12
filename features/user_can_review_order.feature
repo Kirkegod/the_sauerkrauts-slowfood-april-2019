@@ -13,14 +13,14 @@ Feature: User can review his order
       |  email          | password  | name  |
       |  john@doe.com   | password1 | John  |
     When I visit the site
+    And I am logged in as "John"
     And I click on "Add to cart" on "pizza"
     And I should see "1 item"
     And I click on "Add to cart" on "kebab"
     And I should see "2 items"
       
   Scenario: Visitor can review his order
-    Given I am logged in as "John"
-    And I click the "Proceed to checkout" button
+    When I click the "Proceed to checkout" button
     Then I should see "Order Summary"
     And I should see "pizza"
     And I should see "Price €10.00"

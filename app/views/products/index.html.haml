@@ -6,11 +6,13 @@
       %a{href: "#"} Login
 
 %h1 Menu
+
+
 - @categories.each do |category|
-  = category.name{id:dom_id(category)} 
-- category.products.each do |product|
-  = product.name{id:dom_id(product)}
-  = product.description 
-  = "#{product.price} SEK"
+  = category.name(id:dom_id(category))
+  - category.products.each do |product|
+    = product.name(id:dom_id(product))
+    = product.description 
+    = "#{product.price} SEK"
  
 

@@ -8,12 +8,7 @@ Background:
         | name      | description | price | category |
         | nachos    | mexican     | 160   | starter  |
         | hamburger | american    | 100   | main     |
-        | helado    | chilean     | 45    | desert   |
-    And the following categories exist
-        | name   |
-        | starter|
-        | main   |
-        | desert |
+        | helado    | chilean     | 45    | dessert  |
     And I visit the site
 
 Scenario: View the products sorted in categories

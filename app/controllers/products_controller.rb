@@ -24,5 +24,8 @@ class ProductsController < ApplicationController
     def products_params
       params.require(:product).permit(:name, :description, :price)
     end
-  
+
+    # def find_category
+    #   Category.find_by(id: params[:product][:category_id])
+    # end
 end

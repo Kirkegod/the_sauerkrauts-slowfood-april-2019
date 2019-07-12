@@ -9,6 +9,7 @@ Background:
         | nachos    | mexican     | 160   | starter  |
         | hamburger | american    | 100   | main     |
         | helado    | chilean     | 45    | dessert  |
+        | chocolate | french      | 45    | dessert  |
     And I visit the site
 
 Scenario: View the products sorted in categories

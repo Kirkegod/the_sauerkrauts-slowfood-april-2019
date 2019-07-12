@@ -15,11 +15,5 @@
     = notice
     = alert
 
-  - if user_signed_in?
-    %p
-      Hello, #{current_user.name} - #{link_to "Sign_out", destroy_user_session_path, method: 'delete'}
-        
-    %br/
-
   = yield
     

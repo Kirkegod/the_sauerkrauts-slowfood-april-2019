@@ -9,6 +9,13 @@ Background:
         | nachos    | mexican     | 160   | starter  |
         | hamburger | american    | 100   | main     |
         | helado    | chilean     | 45    | desert   |
+
+    Given the following categories exist
+    | name   |
+    | starter|
+    | main   |
+    | desert |
+
     And I visit the site
 
 Scenario: View the products sorted in categories

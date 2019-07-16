@@ -1,19 +1,27 @@
-%nav.navbar.navbar-default{role: "navigation"}
-  %ul.nav.navbar-nav
-    %li
+.header
+  %nav.navbar.navbar-default{role: "navigation"}
+    %ul.header
       - if user_signed_in?
-        %p
-          Hello, #{current_user.name} - #{link_to "Sign_out", destroy_user_session_path, method: 'delete'}
-    %li
-      = checkout_link
-    %li
-      %a{href: "users/sign_up"} Sign Up
-    %li
-      %a{href: "users/sign_in"} Log in
-    %li
-      = shop_icon_quantity
+        %li  
+          #{link_to "Log Off", destroy_user_session_path, method: 'delete'}
+        %li
+          = checkout_link  
+        %li.invisible
+          = shop_icon_quantity
+        %li
+          %p
+            Hello, #{current_user.name}
+      - else  
+        %li
+          %a{href: "users/sign_up"} Sign Up
+        %li
+          %a{href: "users/sign_in"} Log In
 
-%h1 Menu
+%span
+  =image_tag "logo.jpg"
+
+.menu
+  %h1 Menu
 
 - @products.each do |product|
   .div{id: dom_id(product)}
